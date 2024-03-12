@@ -1,0 +1,13 @@
+export const TITLE = "ゆいとの倉庫";
+export const FULL_DISCRIPTION = "";
+export const SHORT_DISCRIPTION = "とあるS高生の雑記帳";
+export const FULL_TITLE = "ゆいとの倉庫 - とあるS高生の雑記帳";
+export const COPYRIGHTS_NAME = "Akatsuki Yuito";
+export const COPYRIGHTS_YEAR = "2024";
+export const COPYRIGHTS_URL = "https://x.com/yuito_it_";
+export const repo = "yuito-it/NextBlogComplateStarter";
+export const repoId = "R_kgDOLW2HCg";
+export const category = "Giscus Comments";
+export const categoryId = "DIC_kwDOLW2HCs4Cdu4f";
+export const mapping = "title";
+export const GA_ID = "";
