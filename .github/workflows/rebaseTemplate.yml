@@ -30,15 +30,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          git pull template master:template/master
-  PR:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Create pull request
-        uses: repo-sync/pull-request@v2
-        with:
-          source_branch: template/master
-          destination_branch: main
-          pr_title: Update template
-          pr_label: dependencies
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          git fetch template master:template/master
