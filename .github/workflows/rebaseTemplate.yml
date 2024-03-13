@@ -26,23 +26,18 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: git remote add template https://github.com/UniPro-tech/NextBlogComplateStarter.git
-      - name: HASH
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: echo "HASH=$(git rev-parse --short HEAD)" >> $GITHUB_ENV
       - name: Pull
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          git branch template/master_${{ env.HASH }}
-          git pull template master:template/master_${{ env.HASH }}
+          git pull template master:template/master
   PR:
     runs-on: ubuntu-latest
     steps:
       - name: Create pull request
         uses: repo-sync/pull-request@v2
         with:
-          source_branch: fix/hoge_${{ env.HASH }}
+          source_branch: template/master
           destination_branch: main
           pr_title: Update template
           pr_label: dependencies
