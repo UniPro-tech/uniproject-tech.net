@@ -1,14 +1,15 @@
 import Giscus from '@giscus/react';
+import { repo,category,repoId,categoryId,mapping } from "@/config";
 
 export default function Comment() {
   return (
     <Giscus
       id="comments"
-      repo="UniPro-tech/unipro-tech.github.io"
-      repoId="R_kgDOKxaUsQ"
-      category="Giscus Comments"
-      categoryId="DIC_kwDOKxaUsc4CdcsK"
-      mapping="title"
+      repo={repo}
+      repoId={repoId}
+      category={category}
+      categoryId={categoryId}
+      mapping={mapping}
       term="コメント..."
       reactionsEnabled="1"
       emitMetadata="1"

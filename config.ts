@@ -1,0 +1,13 @@
+export const TITLE = "UniPro's Blog";
+export const FULL_DISCRIPTION = "";
+export const SHORT_DISCRIPTION = "The all-Japan digital club.";
+export const FULL_TITLE = "UniPro - 全国ネットのデジタルサークル！";
+export const COPYRIGHTS_NAME = "UniProject";
+export const COPYRIGHTS_YEAR = "2024";
+export const COPYRIGHTS_URL = "";
+export const repo = "UniPro-tech/unipro-tech.github.io";
+export const repoId = "R_kgDOKxaUsQ";
+export const category = "Giscus Comments";
+export const categoryId = "DIC_kwDOKxaUsc4CdcsK";
+export const mapping = "title";
+export const GA_ID = "G-TZR9JVPWMG";

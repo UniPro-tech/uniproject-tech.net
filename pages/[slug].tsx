@@ -5,7 +5,7 @@ import PostBody from "@/components/post-body";
 import Header from "@/components/header";
 import PostHeader from "@/components/post-header";
 import Layout from "@/components/layout";
-import { getPostBySlug, getAllPosts } from "@/lib/api";
+import { getSpecialBySlug, getAllSpecials } from "@/lib/api";
 import PostTitle from "@/components/post-title";
 import Head from "next/head";
 import OGP from "@/components/ogp";
@@ -20,9 +20,10 @@ type Props = {
   preview?: boolean;
 };
 
-export default function Post({ post, morePosts, preview }: Props) {
+export default function Post({ post, preview }: Props) {
   const router = useRouter();
   const title = `${post.title} | ${TITLE}`;
+
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />;
   }
@@ -39,7 +40,7 @@ export default function Post({ post, morePosts, preview }: Props) {
                 <Head>
                   <title>{title}</title>
                 </Head>
-                <OGP url={post.ogImage.url} />
+                {post.ogImage && <OGP url={post.ogImage.url} />}
                 <PostHeader
                   title={post.title}
                   coverImage={post.coverImage}
@@ -64,7 +65,7 @@ type Params = {
 };
 
 export async function getStaticProps({ params }: Params) {
-  const post = getPostBySlug(params.slug, [
+  const post = getSpecialBySlug(params.slug, [
     "title",
     "date",
     "slug",
@@ -73,6 +74,11 @@ export async function getStaticProps({ params }: Params) {
     "ogImage",
     "coverImage",
   ]);
+  if (!post) {
+    return {
+      notFound: true,
+    };
+  }
   const content = await markdownToHtml(post.content || "");
   return {
     props: {
@@ -85,7 +91,7 @@ export async function getStaticProps({ params }: Params) {
 }
 
 export async function getStaticPaths() {
-  const posts = getAllPosts(["slug"]);
+  const posts = getAllSpecials(["slug"]);
 
   return {
     paths: posts.map((post) => {

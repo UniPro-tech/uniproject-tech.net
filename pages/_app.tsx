@@ -1,9 +1,9 @@
-import { GA_TRACKING_ID, pageview } from "../lib/gtag";
+import { GA_TRACKING_ID, pageview } from "@/lib/gtag";
 import { AppProps } from "next/app";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 
-import "../styles/index.css";
+import "@/styles/index.css";
 
 export default function App({ Component, pageProps }: AppProps): JSX.Element {
   const router = useRouter();

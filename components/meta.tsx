@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { CMS_NAME, HOME_OG_IMAGE_URL } from "../lib/constants";
+import { SHORT_DISCRIPTION } from "@/config";
 
 const Meta = () => {
   return (
@@ -32,7 +32,7 @@ const Meta = () => {
       <meta name="msapplication-config" content="/favicon/browserconfig.xml" />
       <meta name="theme-color" content="#000" />
       <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
-      <meta name="description" content={`全国ネットのデジタルサークル、UniProのHP兼ブログです！`} />
+      <meta name="description" content={SHORT_DISCRIPTION} />
     </Head>
   );
 };

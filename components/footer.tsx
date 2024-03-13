@@ -1,5 +1,5 @@
-import Container from './container'
-import { EXAMPLE_PATH } from '../lib/constants'
+import Container from "./container";
+import { COPYRIGHTS_NAME, COPYRIGHTS_URL, COPYRIGHTS_YEAR } from "@/config";
 
 const Footer = () => {
   return (

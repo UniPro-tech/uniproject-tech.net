@@ -1,13 +1,14 @@
-import Container from "../components/container";
-import MoreStories from "../components/more-stories";
-import HeroPost from "../components/hero-post";
-import Intro from "../components/intro";
-import Layout from "../components/layout";
-import { getAllPosts } from "../lib/api";
+import Container from "@/components/container";
+import MoreStories from "@/components/more-stories";
+import HeroPost from "@/components/hero-post";
+import Intro from "@/components/intro";
+import Layout from "@/components/layout";
+import { getAllPosts } from "@/lib/api";
 import Head from "next/head";
-import Post from "../interfaces/post";
-import { IndexHeader } from "../components/header";
-import OGP from "../components/ogp";
+import Post from "@/interfaces/post";
+import { IndexHeader } from "@/components/header";
+import OGP from "@/components/ogp";
+import { FULL_TITLE } from "@/config";
 
 type Props = {
   allPosts: Post[];
@@ -20,7 +21,7 @@ export default function Index({ allPosts }: Props) {
     <>
       <Layout>
         <Head>
-          <title>{`UniPro - 全国ネットのデジタルサークル！`}</title>
+          <title>{FULL_TITLE}</title>
         </Head>
         <OGP />
         <Container>

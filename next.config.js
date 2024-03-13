@@ -1,4 +1,4 @@
-// next.config.js
+const path = require('path');
 
 module.exports = {
   // ビルド後の出力ディレクトリの設定
@@ -7,4 +7,9 @@ module.exports = {
 
   // クライアントサイドでのWebpackの設定
   webpack5: true,
+
+  webpack: (config) => {
+    config.resolve.alias['@'] = path.resolve(__dirname, './');
+    return config;
+  },
 };
