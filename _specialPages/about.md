@@ -2,7 +2,7 @@
 title: 'UniProについて'
 excerpt: 'UniProとはなんたるか'
 coverImage: '/default/ogp/ogp.webp'
-date: '2024-3-12T14:35:07.322Z'
+date: '2024-03-12T14:35:07.322Z'
 author:
   name: 曙 唯人
   picture: '/assets/blog/authors/YuitoAkatsuki.webp'
