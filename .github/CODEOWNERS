@@ -13,5 +13,5 @@
 /tsconfig.json @UniPro-tech/HP-Infrastructure
 /@types/** @UniPro-tech/HP-Infrastructure
 /.githooks/** @UniPro-tech/HP-Infrastructure
-/.github/** @UniPro-tech/HP-Infrastructure
-/README.md @UniPro-tech/HP-Infrastructure
+/.github/** @UniPro-tech/DevToolInfrastructure
+/README.md @UniPro-tech/HP-Infrastructure 
