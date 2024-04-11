@@ -31,6 +31,11 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git fetch template master:template/master
+      - name: Checkout doc
+        uses: actions/checkout@v4
+        with:
+          ref: template/master
+          path: template/master
       - name: Delete workflow
         run: |
           rm -r ./.github
@@ -38,8 +43,7 @@ jobs:
         run: |
           git config --global user.email "workflow@github.com"
           git config --global user.name "Workflow"
-          git add *
-          git commit * -m "Del workflow"
+          git commit -a -m "Del workflow"
       - name: Push
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
