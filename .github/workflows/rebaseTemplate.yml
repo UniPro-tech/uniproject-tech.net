@@ -40,4 +40,4 @@ jobs:
           git config --global user.name "Workflow"
           git commit -a -m "Del workflow"
       - name: Push
-        run: git push https://${{ secrets.PAT }}@github.com/${{ github.repository }}
+        run: ggit push https://${{ secrets.PAT }}@github.com/${{ github.repository }}
