@@ -40,6 +40,4 @@ jobs:
           git config --global user.name "Workflow"
           git commit -a -m "Del workflow"
       - name: Push
-        env:
-          GITHUB_TOKEN: ${{secrets.PAT}}
-        run: git push -u origin template/master
+        run: ggit push https://${{ secrets.PAT }}@github.com/${{ github.repository }}
