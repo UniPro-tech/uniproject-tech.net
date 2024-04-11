@@ -1,0 +1,17 @@
+/components/** @UniPro-tech/HP-Infrastructure
+/pages/** @UniPro-tech/HP-Infrastructure
+/interfaces/** @UniPro-tech/HP-Infrastructure
+/lib/** @UniPro-tech/HP-Infrastructure
+/public/default/** @UniPro-tech/HP-Infrastructure
+/public/favicon/** @UniPro-tech/HP-Infrastructure
+/styles/index.css @UniPro-tech/HP-Infrastructure
+/next.config.js @UniPro-tech/HP-Infrastructure
+/package-lock.json @UniPro-tech/HP-Infrastructure
+/package.json @UniPro-tech/HP-Infrastructure
+/postcss.config.js @UniPro-tech/HP-Infrastructure
+/tailwind.config.js @UniPro-tech/HP-Infrastructure
+/tsconfig.json @UniPro-tech/HP-Infrastructure
+/@types/** @UniPro-tech/HP-Infrastructure
+/.githooks/** @UniPro-tech/HP-Infrastructure
+/.github/** @UniPro-tech/DevToolInfrastructure
+/README.md @UniPro-tech/HP-Infrastructure 
