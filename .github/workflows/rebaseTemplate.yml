@@ -32,7 +32,7 @@ jobs:
         run: |
           git fetch template master:template/master
       - name: Checkout doc
-        uses: actions/checkout@v4
+        uses: actions/checkout@v2
         with:
           ref: template/master
           path: template/master
