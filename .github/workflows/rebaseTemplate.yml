@@ -33,7 +33,10 @@ jobs:
           git fetch template master:template/master
       - name: Delete workflow
         run: |
-          rm -r .github
+          rm -r ./.github
+      - name: Commit
+        run: |
+          git commit * -m "Del workflow"
       - name: Push
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
