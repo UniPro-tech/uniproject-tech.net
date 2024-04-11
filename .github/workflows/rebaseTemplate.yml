@@ -41,5 +41,5 @@ jobs:
           git commit -a -m "Del workflow"
       - name: Push
         env:
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          GITHUB_TOKEN: ${{secrets.PAT}}
         run: git push -u origin template/master
