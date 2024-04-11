@@ -35,7 +35,6 @@ jobs:
         uses: actions/checkout@v2
         with:
           ref: template/master
-          path: template/master
       - name: Delete workflow
         run: |
           rm -r ./.github
