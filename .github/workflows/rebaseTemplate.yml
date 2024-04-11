@@ -33,11 +33,12 @@ jobs:
           git fetch template master:template/master
       - name: Delete workflow
         run: |
-          git config --global user.email "workflow@github.com"
-          git config --global user.name "Workflow"
           rm -r ./.github
       - name: Commit
         run: |
+          git config --global user.email "workflow@github.com"
+          git config --global user.name "Workflow"
+          git add *
           git commit * -m "Del workflow"
       - name: Push
         env:
