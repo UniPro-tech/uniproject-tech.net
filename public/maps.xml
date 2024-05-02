@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://unipro-tech.github.io/posts/00001</loc>
+    <lastmod>2023-12-26T14:35:07.322Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://unipro-tech.github.io/posts/00002</loc>
+    <lastmod>2023-12-29T20:37:20.322Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://unipro-tech.github.io/</loc>
+    <lastmod>2023-12-29T20:37:20.322Z</lastmod>
+    <priority>1.0</priority>
+  </url>
+</urlset>
