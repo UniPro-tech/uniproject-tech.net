@@ -53,6 +53,8 @@ jobs:
         with:
           node-version: "20"
           cache: ${{ steps.detect-package-manager.outputs.manager }}
+      - name: Gen Sitemap
+        run: node run ./scripts/generate-sitemap.mjs
       - name: Setup Pages
         uses: actions/configure-pages@v4
         with:
