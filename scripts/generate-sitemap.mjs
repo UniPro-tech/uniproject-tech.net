@@ -25,14 +25,14 @@ const generateSitemapXml = (posts) => {
 
   posts.forEach((post) => {
     const url = root.ele("url");
-    url.ele("loc", `https://unipro-tech.github.io/posts/${post.slug}`);
+    url.ele("loc", `https://uniproject-tech.net/posts/${post.slug}`);
     url.ele("lastmod", post.date);
     url.ele("changefreq", "monthly");
     url.ele("priority", "0.8");
   });
 
   let url = root.ele("url");
-  url.ele("loc", `https://unipro-tech.github.io/`);
+  url.ele("loc", `https://uniproject-tech.net/`);
   url.ele("lastmod", posts[posts.length - 1].date);
   url.ele("priority", "1.0");
 
